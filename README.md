@@ -13,7 +13,7 @@ We have a custom set of rules for FT.com repositories. We are generally...
   * For apps this means pinning to specific versions for reliability/predictability
   e.g. `@financial-times/n-express@19.19.1`, with pull requests being opened for
   any new version.
-  * For components this means using semver ranges e.g. `@financial-times/??@^X.X.X`,
+  * For components this means using semver ranges e.g. `@financial-times/n-fetch@^1.0.0`
   only opening pull requests for major updates.
 * Using semver ranges for all other `dependencies` (including [`n-ui`](https://github.com/Financial-Times/n-ui)),
 only opening pull requests for major updates.
