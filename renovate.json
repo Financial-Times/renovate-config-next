@@ -1,6 +1,7 @@
 {
   "extends": [
-    ":onlyNpm",
+    ":npm",
+    ":docker",
     ":separateMajorReleases",
     ":combinePatchMinorReleases",
     ":ignoreUnstable",
@@ -19,6 +20,9 @@
   ],
   "labels": [
     "dependencies"
+  ],
+  "supportPolicy": [
+    "lts"
   ],
   "branchPrefix": "renovate-",
   "rangeStrategy": "replace",
@@ -73,7 +77,6 @@
     }
   ],
   "ignoreDeps": [
-    "bower",
-    "node"
+    "bower"
   ]
 }
