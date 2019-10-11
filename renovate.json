@@ -32,6 +32,7 @@
   ],
   "packageRules": [
     {
+      "description": "Match our own packages, but only on major or minior versions",
       "packagePatterns": [
         "^@financial-times",
         "^ft-next-",
@@ -48,6 +49,18 @@
       "depTypeList": [
         "dependencies"
       ],
+      "updateTypes": ["major", "minor"],
+      "rangeStrategy": "auto"
+    },
+    {
+      "description": "Match our own packages where patch versions need consistency between apps, like for UI. The last match rule takes precident so this needs to be below our generic internal rule",
+      "packageNames": [
+        "@financial-times/n-myft-ui"
+      ],
+      "depTypeList": [
+        "dependencies"
+      ],
+      "updateTypes": ["major", "minor", "patch"],
       "rangeStrategy": "auto"
     },
     {
@@ -67,6 +80,7 @@
         "@financial-times/n-gage",
         "@financial-times/n-heroku-tools"
       ],
+      "updateTypes": ["major", "minor"],
       "masterIssueApproval": false,
       "groupName": "next build tools",
       "groupSlug": "next-build-tools"
