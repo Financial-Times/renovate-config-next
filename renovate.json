@@ -48,7 +48,11 @@
       "depTypeList": [
         "dependencies"
       ],
-      "rangeStrategy": "auto"
+      "rangeStrategy": "auto",
+      "separateMinorPatch": true,
+      "patch": {
+        "automerge": true
+      }
     },
     {
       "packageNames": [
