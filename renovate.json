@@ -27,6 +27,7 @@
   "branchPrefix": "renovate-",
   "rangeStrategy": "replace",
   "masterIssue": true,
+  "masterIssueApproval": true,
   "prBodyNotes": [
     ":information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate."
   ],
