@@ -96,6 +96,12 @@
       "masterIssueApproval": false,
       "groupName": "page kit monorepo",
       "groupSlug": "page-kit"
+    },
+    {
+      "packageNames": [
+        "uuid"
+      ],
+      "rangeStrategy": "bump"
     }
   ],
   "ignoreDeps": [
