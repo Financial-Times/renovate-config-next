@@ -9,5 +9,8 @@
   "license": "MIT",
   "devDependencies": {
     "renovate": "^19.38.7"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
