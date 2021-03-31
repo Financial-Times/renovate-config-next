@@ -16,10 +16,8 @@
     "group:recommended",
     "helpers:disableTypesNodeMajor",
     "helpers:oddIsUnstablePackages",
-    "schedule:nonOfficeHours",
     ":noUnscheduledUpdates"
   ],
-  "timezone": "Europe/London",
   "labels": [
     "dependencies"
   ],
