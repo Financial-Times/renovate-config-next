@@ -1,7 +1,6 @@
 {
  "extends": [
   ":npm",
-  ":docker",
   ":separateMajorReleases",
   ":combinePatchMinorReleases",
   ":ignoreUnstable",
@@ -22,6 +21,7 @@
  "branchPrefix": "renovate-",
  "rangeStrategy": "replace",
  "dependencyDashboard": true,
+ "dependencyDashboardApproval": true,
  "prBodyNotes": [
   ":information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate."
  ],
@@ -30,20 +30,19 @@
    "matchPackagePrefixes": [
     "@financial-times",
     "ft-next-",
-    "ft-n-",
-    "n-",
-    "next-",
-    "s3o-"
+    "ft-n-"
    ],
    "matchPackageNames": [
     "shellpromise",
     "fetchres",
-    "isomorphic-fetch"
+    "isomorphic-fetch",
+    "next-metrics",
+    "n-health"
    ],
    "depTypeList": [
     "dependencies"
    ],
-   "rangeStrategy": "auto"
+   "dependencyDashboardApproval": false
   },
   {
    "depTypeList": [

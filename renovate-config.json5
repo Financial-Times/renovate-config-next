@@ -2,7 +2,6 @@
   // this file gets transpiled to a renovate.json file on a pre-commit hook, do not edit renovate.json directly.
   extends: [
     ':npm',
-    ':docker',
     ':separateMajorReleases',
     ':combinePatchMinorReleases',
     ':ignoreUnstable',
@@ -23,6 +22,7 @@
   branchPrefix: 'renovate-',
   rangeStrategy: 'replace', // replace the version range with new one if new version is outside old range in package.json
   dependencyDashboard: true,
+  dependencyDashboardApproval: true, // prevent Renovate opening PRs for most things without a manual step
   prBodyNotes: [
     ':information_source: Find our documentation at https://github.com/Financial-Times/next/wiki/Renovate.',
   ],
@@ -31,20 +31,19 @@
       matchPackagePrefixes: [
         '@financial-times',
         'ft-next-',
-        'ft-n-',
-        'n-',
-        'next-',
-        's3o-',
+        'ft-n-'
       ],
       matchPackageNames: [
         'shellpromise',
         'fetchres',
         'isomorphic-fetch',
+        'next-metrics',
+        'n-health'
       ],
       depTypeList: [
         'dependencies',
       ],
-      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false, // override default and open PRs for internal packages + the ones stated
     },
     {
       // for devDependencies, don't create a PR until the checkbox is checked on the "dependency issue"

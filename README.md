@@ -3,7 +3,6 @@
 [![CircleCI](https://circleci.com/gh/Financial-Times/renovate-config-next.svg?style=svg)](https://circleci.com/gh/Financial-Times/renovate-config-next)
 
 > Shared [Renovate](https://renovatebot.com/) configuration for FT.com.
-
 ## Our Configuration
 
 We have a custom set of rules for FT.com repositories. We are generally...
