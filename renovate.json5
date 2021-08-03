@@ -1,5 +1,4 @@
 {
-  // this file gets transpiled to a renovate.json file on CircleCI's build step
   extends: [
     ':npm',
     ':docker',
