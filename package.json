@@ -4,10 +4,12 @@
   "description": "Shared Renovate configuration for FT.com.",
   "main": "index.js",
   "scripts": {
+    "build": "node ./json5-to-json.js",
     "test": "renovate-config-validator"
   },
   "license": "MIT",
   "devDependencies": {
+    "json5": "^2.2.0",
     "renovate": "^25.59.1"
   }
 }
