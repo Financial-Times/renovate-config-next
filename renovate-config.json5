@@ -1,4 +1,5 @@
 {
+  // this file gets transpiled to a renovate.json file on a pre-commit hook, do not edit renovate.json directly.
   extends: [
     ':npm',
     ':docker',
