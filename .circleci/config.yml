@@ -9,5 +9,7 @@ jobs:
       - image: circleci/node:12
     steps:
       - checkout
+      - node/install-npm:
+          version: "7"
       - run: npm install
       - run: npm test
