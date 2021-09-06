@@ -1,4 +1,7 @@
-version: 2
+version: 2.1
+
+orbs:
+  node: circleci/node@4.6.0
 
 jobs:
   build:
@@ -6,5 +9,7 @@ jobs:
       - image: circleci/node:12
     steps:
       - checkout
+      - node/install-npm:
+          version: "7"
       - run: npm install
       - run: npm test
