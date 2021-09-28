@@ -18,11 +18,6 @@
  "labels": [
   "dependencies"
  ],
- "node": {
-  "supportPolicy": [
-   "lts"
-  ]
- },
  "branchPrefix": "renovate-",
  "rangeStrategy": "replace",
  "dependencyDashboard": true,
@@ -54,6 +49,12 @@
     "devDependencies"
    ],
    "dependencyDashboardApproval": true
+  },
+  {
+   "matchDepTypes": [
+    "volta"
+   ],
+   "enabled": false
   },
   {
    "packageNames": [
