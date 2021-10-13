@@ -7,7 +7,7 @@
     "verify": "./scripts/verify.sh",
     "build": "node ./scripts/json5-to-json.js",
     "test": "renovate-config-validator",
-    "preinstall": "[[ \"$INIT_CWD\" != \"$PWD\" ]] || npm_config_yes=true npx check-engine"
+    "preinstall": "[ \"$INIT_CWD\" != \"$PWD\" ] || npm_config_yes=true npx check-engine"
   },
   "license": "MIT",
   "devDependencies": {
