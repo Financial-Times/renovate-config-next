@@ -6,10 +6,14 @@ orbs:
 jobs:
   build:
     docker:
-      - image: cimg/node:12.22
+      - image: cimg/node:<< parameters.node-version >>
     steps:
       - checkout
       - node/install-npm:
           version: "7"
       - run: npm install
       - run: npm test
+    parameters:
+      node-version:
+        default: "16.14"
+        type: string
