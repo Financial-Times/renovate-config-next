@@ -10,6 +10,7 @@
   ":automergeDisabled",
   ":ignoreModulesAndTests",
   ":maintainLockFilesDisabled",
+  ":disableVulnerabilityAlerts",
   "group:monorepos",
   "group:recommended",
   "helpers:disableTypesNodeMajor"
