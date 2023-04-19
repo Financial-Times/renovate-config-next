@@ -114,6 +114,29 @@
       groupName: 'page kit monorepo',
       groupSlug: 'page-kit',
     },
+    {
+      // group Tool Kit packages together
+      matchPackageNames: [
+        'dotcom-tool-kit',
+      ],
+      matchPackagePrefixes: [
+        '@dotcom-tool-kit/',
+      ],
+      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false,
+      groupName: 'Tool Kit monorepo',
+      groupSlug: 'dotcom-tool-kit',
+    },
+    {
+      // group Reliability Kit packages together
+      matchPackagePrefixes: [
+        '@dotcom-reliability-kit/',
+      ],
+      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false,
+      groupName: 'Reliability Kit monorepo',
+      groupSlug: 'dotcom-reliability-kit',
+    },
   ],
   ignoreDeps: [
     'bower',
