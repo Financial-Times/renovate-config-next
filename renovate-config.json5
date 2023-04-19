@@ -124,6 +124,16 @@
       groupName: 'Tool Kit monorepo',
       groupSlug: 'dotcom-tool-kit',
     },
+    {
+      // group Reliability Kit packages together
+      matchPackagePrefixes: [
+        '@dotcom-reliability-kit/',
+      ],
+      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false,
+      groupName: 'Reliability Kit monorepo',
+      groupSlug: 'dotcom-reliability-kit',
+    },
   ],
   ignoreDeps: [
     'bower',
