@@ -114,6 +114,16 @@
       groupName: 'page kit monorepo',
       groupSlug: 'page-kit',
     },
+    {
+      // group Tool Kit packages together
+      matchPackagePrefixes: [
+        '@dotcom-tool-kit/',
+      ],
+      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false,
+      groupName: 'Tool Kit monorepo',
+      groupSlug: 'dotcom-tool-kit',
+    },
   ],
   ignoreDeps: [
     'bower',
