@@ -107,6 +107,9 @@
    "groupSlug": "page-kit"
   },
   {
+   "matchPackageNames": [
+    "dotcom-tool-kit"
+   ],
    "matchPackagePrefixes": [
     "@dotcom-tool-kit/"
    ],

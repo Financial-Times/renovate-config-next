@@ -116,6 +116,9 @@
     },
     {
       // group Tool Kit packages together
+      matchPackageNames: [
+        'dotcom-tool-kit',
+      ],
       matchPackagePrefixes: [
         '@dotcom-tool-kit/',
       ],
