@@ -6,8 +6,7 @@
   "scripts": {
     "verify": "./scripts/verify.sh",
     "build": "node ./scripts/json5-to-json.js",
-    "test": "renovate-config-validator && ./scripts/test.sh",
-    "preinstall": "[ \"$INIT_CWD\" != \"$PWD\" ] || npm_config_yes=true npx check-engine"
+    "test": "renovate-config-validator && ./scripts/test.sh"
   },
   "license": "MIT",
   "devDependencies": {
@@ -22,11 +21,10 @@
     }
   },
   "volta": {
-    "node": "16.14.0",
-    "npm": "7.20.2"
+    "node": "18.16.0"
   },
   "engines": {
-    "node": "16.x",
-    "npm": "7.x || 8.x"
+    "node": "16.x || 18.x",
+    "npm": "7.x || 8.x || 9.x"
   }
 }

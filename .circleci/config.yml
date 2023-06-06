@@ -9,11 +9,9 @@ jobs:
       - image: cimg/node:<< parameters.node-version >>
     steps:
       - checkout
-      - node/install-npm:
-          version: "7"
       - run: npm install
       - run: npm test
     parameters:
       node-version:
-        default: "16.14"
+        default: "18.16"
         type: string
