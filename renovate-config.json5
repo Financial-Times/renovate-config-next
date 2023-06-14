@@ -135,6 +135,16 @@
       groupName: 'Reliability Kit monorepo',
       groupSlug: 'dotcom-reliability-kit',
     },
+    {
+      // group cp-content-pipeline packages together
+      matchPackagePrefixes: [
+        '@financial-times/cp-content-pipeline-',
+      ],
+      rangeStrategy: 'auto',
+      dependencyDashboardApproval: false,
+      groupName: 'cp-content-pipeline monorepo',
+      groupSlug: 'cp-content-pipeline',
+    },
   ],
   ignoreDeps: [
     'bower',
