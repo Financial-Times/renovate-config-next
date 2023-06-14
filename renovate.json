@@ -125,6 +125,15 @@
    "dependencyDashboardApproval": false,
    "groupName": "Reliability Kit monorepo",
    "groupSlug": "dotcom-reliability-kit"
+  },
+  {
+   "matchPackagePrefixes": [
+    "@financial-times/cp-content-pipeline-"
+   ],
+   "rangeStrategy": "auto",
+   "dependencyDashboardApproval": false,
+   "groupName": "cp-content-pipeline monorepo",
+   "groupSlug": "cp-content-pipeline"
   }
  ],
  "ignoreDeps": [
