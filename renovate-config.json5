@@ -58,16 +58,6 @@
       enabled: false
     },
     {
-      // group n-gage & n-heroku tools into one PR
-      packageNames: [
-        '@financial-times/n-gage',
-        '@financial-times/n-heroku-tools',
-      ],
-      dependencyDashboardApproval: false, // opens a PR without approval, overriding the devDependencies rule
-      groupName: 'next build tools',
-      groupSlug: 'next-build-tools',
-    },
-    {
       // force approval on origami packages, n-profile-ui and n-live-chat
       matchPackagePrefixes: [
         'o-',
