@@ -19,12 +19,5 @@
     "hooks": {
       "pre-commit": "npm run verify && npm run build && git add renovate.json"
     }
-  },
-  "volta": {
-    "node": "18.16.0"
-  },
-  "engines": {
-    "node": "16.x || 18.x",
-    "npm": "7.x || 8.x || 9.x"
   }
 }
